@@ -1,0 +1,60 @@
+==================================================
+       CAESAR CIPHER - Encrypt / Decrypt
+==================================================
+Sample Execution Transcript — Task 1, AVIP 2026
+
+--- RUN 1: Encrypt basic text with mixed case, punctuation, numbers ---
+
+1. Encrypt text
+2. Decrypt text
+3. Exit
+Choose an option (1/2/3): 1
+Enter the text to encrypt: Hello, World! 123
+Enter shift value (e.g. 3): 3
+
+Original : Hello, World! 123
+Shift    : 3
+Encrypted: Khoor, Zruog! 123
+
+--- RUN 2: Decrypt the ciphertext above, confirm it round-trips ---
+
+1. Encrypt text
+2. Decrypt text
+3. Exit
+Choose an option (1/2/3): 2
+Enter the text to decrypt: Khoor, Zruog! 123
+Enter shift value used for encryption: 3
+
+Ciphertext: Khoor, Zruog! 123
+Shift     : 3
+Decrypted : Hello, World! 123
+
+--- RUN 3: Encrypt a longer sentence with a different shift (5) ---
+
+1. Encrypt text
+2. Decrypt text
+3. Exit
+Choose an option (1/2/3): 1
+Enter the text to encrypt: AVIP 2026 is the proving ground
+Enter shift value (e.g. 3): 5
+
+Original : AVIP 2026 is the proving ground
+Shift    : 5
+Encrypted: FANU 2026 nx ymj uwtansl lwtzsi
+
+--- Exit ---
+
+1. Encrypt text
+2. Decrypt text
+3. Exit
+Choose an option (1/2/3): 3
+Exiting. Goodbye!
+
+==================================================
+Observations:
+- Numbers (2026, 123) remain unchanged — confirms non-alphabet
+  characters are preserved as required.
+- Case is preserved (A stays uppercase, s stays lowercase).
+- Encryption and decryption with the same shift are inverses of
+  each other (Run 1 -> Run 2 round-trips correctly).
+==================================================
